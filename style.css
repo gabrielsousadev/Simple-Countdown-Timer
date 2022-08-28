@@ -115,26 +115,6 @@ body
     animation-delay: 2s;
 }
 
-@keyframes rise 
-{
-    0%
-    {
-        bottom: -10rem;
-        transform: translateX(0);
-    }
-    
-    50%
-    {
-        transform: translate(10rem);
-    } 
-
-    100%
-    {
-        bottom: 1080px;
-        transform: translateX(-20rem);
-    } 
-}
-
 .container 
 {
     margin-left: auto;
@@ -146,46 +126,6 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-@media(min-width: 576px)
-{
-    .container
-    {
-        width: 540px;
-    }
-}
-
-@media(min-width: 768px)
-{
-    .container
-    {
-        width: 720px;
-    }
-}
-
-@media(min-width: 992px)
-{
-    .container
-    {
-        width: 960px;
-    }
-}
-
-@media(min-width: 1200px)
-{
-    .container
-    {
-        width: 1170px;
-    }
-}
-
-@media(min-width: 1400px)
-{
-    .container
-    {
-        width: 1320px;
-    }
 }
 
 .container .content
@@ -204,19 +144,6 @@ body
 .container .content p
 {
     font-size: 1.6rem;
-}
-
-@media(min-width: 768px)
-{
-    .container .content h1
-    {
-        font-size: 6rem;
-    }
-
-    .container .content p
-    {
-        font-size: 1.8rem;
-    }
 }
 
 .container .content .counter
@@ -250,4 +177,74 @@ body
     text-align: center;
     font-size: 1.6rem;
     border-top: .1rem solid #ffffff;
+}
+
+@keyframes rise 
+{
+    0%
+    {
+        bottom: -10rem;
+        transform: translateX(0);
+    }
+    
+    50%
+    {
+        transform: translate(10rem);
+    } 
+
+    100%
+    {
+        bottom: 1080px;
+        transform: translateX(-20rem);
+    } 
+}
+
+@media(min-width: 576px)
+{
+    .container
+    {
+        width: 540px;
+    }
+}
+
+@media(min-width: 768px)
+{
+    .container
+    {
+        width: 720px;
+    }
+
+    .container .content h1
+    {
+        font-size: 6rem;
+    }
+
+    .container .content p
+    {
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 992px)
+{
+    .container
+    {
+        width: 960px;
+    }
+}
+
+@media(min-width: 1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+}
+
+@media(min-width: 1400px)
+{
+    .container
+    {
+        width: 1320px;
+    }
 }
